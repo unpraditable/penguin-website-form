@@ -72,6 +72,74 @@
           allowfullscreen
         ></iframe>
       </section>
+
+      <section>
+        <h2>Join our penguin fanclub!</h2>
+        <form action="#">
+          <fieldset>
+            <legend>Personal Data:</legend>
+            <div>
+              <label for="fullName">Full Name:</label>
+              <input id="fullName" type="text" required />
+            </div>
+
+            <div>
+              <label for="email">Email:</label>
+              <input id="email" type="email" required />
+            </div>
+
+            <div>
+              <p>Are you living in Indonesia?</p>
+              <input type="radio" id="yes" name="isIndonesia" value="Male" />
+              <label for="yes">Yes</label>
+              <input type="radio" id="no" name="isIndonesia" value="Female" />
+              <label for="no">No</label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Additional information:</legend>
+            <div>
+              <p>What do you think about a penguin?</p>
+              <input
+                id="cute"
+                type="checkbox"
+                name="personality"
+                value="cute"
+              />
+              <label for="cute">Cute</label>
+              <input
+                id="adorable"
+                type="checkbox"
+                name="personality"
+                value="adorable"
+              />
+              <label for="adorable">Adorable</label>
+              <input
+                id="beautiful"
+                type="checkbox"
+                name="personality"
+                value="beautiful"
+              />
+              <label for="beautiful">Beautiful</label>
+            </div>
+            <div>
+              <p>Tell us why you love penguins!</p>
+              <textarea rows="3"></textarea>
+            </div>
+            <div>
+              <p>Upload your favorite penguin picture here:</p>
+              <input
+                type="file"
+                id="photo"
+                name="myPenguinPhoto"
+                required
+                accept="image/png, image/jpeg"
+              />
+            </div>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
   </body>
 </html>
